@@ -1,0 +1,5 @@
+steps:
+  - label: "🚀 Run npm Setup Script"
+    command: |
+      chmod +x setup-npm-project.sh
+      ./setup-npm-project.sh
