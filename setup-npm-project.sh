@@ -45,10 +45,15 @@ echo "📝 Creating 'index.js' with a simple lodash example..."
 cat <<EOL > index.js
 const _ = require('lodash');
 
-const numbers = [4, 2, 8, 6];
+// Generate an array of 10 random numbers
+const numbers = [42, 7, 88, 3, 16, 24, 91, 5, 33, 76];
+
+console.log("🔀 Original mixed array:", numbers);
+
+// Sort the array using lodash
 const sortedNumbers = _.sortBy(numbers);
 
-console.log("Sorted numbers:", sortedNumbers);
+console.log("✅ Sorted numbers:", sortedNumbers);
 EOL
 echo "✅ index.js created."
 
@@ -74,4 +79,3 @@ fi
 
 echo "🎉 Setup complete! Your npm project is ready."
 echo "------------------------------------------------------------"
-
